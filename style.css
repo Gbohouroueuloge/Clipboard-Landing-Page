@@ -9,13 +9,13 @@ body {
     font-family: "Bai Jamjuree", sans-serif;
 }
 
-.head .bacg {
+.hero-header .header-background {
     background-image: url(IMG/bg-header-desktop.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.head .icon-main {
+.hero-header .logo-main {
     display: block;
     margin: auto;
     padding-top: 10vw;
@@ -25,23 +25,23 @@ body {
     height: auto;
 }
 
-.head .title {
+.hero-header .main-title {
     color: hsl(210, 10%, 33%);
     text-align: center;
 }
 
-.sub-title, p {
+.description, p {
     text-align: center;
     color: hsl(201, 11%, 66%);
 }
 
-.head .sub-title, .princ > p {
+.hero-header .description, .features-section > .feature-intro {
     width: 50%;
     margin: auto;
     margin-top: 0.7vw;
 }
 
-.ct-button {
+.download-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ body {
     margin-top: 3vw;
 }
 
-.butt {
+.download-btn {
     width: 20%;
     height: 3vw;
     border-radius: 20px;
@@ -58,41 +58,41 @@ body {
     transition: all 0.5s;
 }
 
-.butt:hover {
+.download-btn:hover {
     background: black;
     border-color: black;
 }
 
-.butt:focus {
+.download-btn:focus {
     background: black;
     border-color: black;
 }
 
-.butt:active {
+.download-btn:active {
     background: hsl(201, 11%, 66%);
     border-color: hsl(202, 17%, 91%);
 }
 
-.but-ios {
+.ios-btn {
     background: hsl(171, 66%, 44%);
     border-color: hsl(171, 66%, 44%);
 }
 
-.but-mac {
+.mac-btn {
     background: hsl(233, 100%, 69%);
     border-color: hsl(233, 100%, 69%);
 }
 
-.princ h2 {
+.features-section h2 {
     text-align: center;
     color: hsl(210, 10%, 33%);
 }
 
-.princ h2:first-of-type {
+.features-section h2:first-of-type {
     margin-top: 10vw;
 }
 
-.princ .competence {
+.features-section .features-list {
     display: flex;
     gap: 7vw;
     margin-top: 5vw;
@@ -100,34 +100,34 @@ body {
     margin-bottom: 8vw;
 }
 
-.princ :is(.competence img, .img-devise) {
+.features-section :is(.features-list img, .devices-image) {
     display: block;
     width: 45vw;
     height: auto;
 }
 
-.princ .competence .ens-ic {
+.features-section .features-list .features-details {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
 }
 
-.princ .competence h3 {
+.features-section .features-list .feature-title {
     color: hsl(210, 10%, 33%);
 }
 
-.princ .competence p {
+.features-section .features-list p {
     text-align: start;
 }   
 
-.princ .img-devise {
+.features-section .devices-image {
     margin: auto;
     margin-top: 5vw;
     margin-bottom: 4vw;
 }
 
-.princ .ens-comp {
+.features-section .tools-list {
     display: flex;
     margin: 4vw 7vw;
     justify-content: center;
@@ -135,7 +135,7 @@ body {
     gap: 3vw;
 }
 
-.princ .comp {
+.features-section .tool-card {
     display: flex;
     flex-direction: column;
     width: 28%;
@@ -143,13 +143,13 @@ body {
     align-items: center;
 }
 
-.princ .comp img {
+.features-section .tool-card img {
     display: block;
     width: 7vw;
     height: 6vw;
 }
 
-.princ .paternaire {
+.features-section .partners-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,34 +157,36 @@ body {
     margin: 9vw auto;
 }
 
-.princ .paternaire img {
+.features-section .partners-list img {
     width: 10vw;
     height: auto;
 }
 
-.footer {
+.main-footer {
+    position: sticky;
+    bottom: 5px;
     margin-top: 15vw;
     margin-bottom: 0.3vw;
     background-color: hsl(202, 17%, 91%);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 4vw;
-    height: 11vw;
+    height: auto;
 }
 
-.footer .logo-footer {
+.main-footer .footer-logo {
     display: block;
     margin: auto;
     width: 5vw;
     height: auto;
 }
 
-.footer a {
+.main-footer a {
     text-decoration: none;
     color: hsl(210, 10%, 33%);
 }
 
-.footer .fac {
+.main-footer .footer-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5vw;
@@ -195,20 +197,20 @@ body {
     text-align: center;
 }
 
-.footer .fac * {
+.main-footer .footer-links * {
     transition: all 0.5s;
 }
 
-.footer .fac *:hover {
+.main-footer .footer-links *:hover {
     border: 1px solid hsl(210, 10%, 33%);
 }
 
-.footer .fac *:active {
+.main-footer .footer-links *:active {
     background-color: hsl(210, 10%, 33%);
     color: hsl(202, 17%, 91%);
 }
 
-.footer .social {
+.main-footer .social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,15 +218,15 @@ body {
     margin-right: 6vw;
 }
 
-.footer .social * {
+.main-footer .social * {
     transition: all 0.6s ease-in-out;
 }
 
-.footer .social *:hover {
+.main-footer .social *:hover {
     transform: scale(1.2);
 }
 
-.footer .social img {
+.main-footer .social img {
     width: 2vw;
     aspect-ratio: 1/1;
 }
@@ -234,49 +236,49 @@ body {
         font-size: 5vw;
     }
 
-    .head .bacg {
+    .hero-header .header-background {
         background-image: url(IMG/bg-header-mobile.png);
     }
 
-    .head .title {
+    .hero-header .main-title {
         margin-top: 4.5vw;
         margin-bottom: 3vw;
     }
 
-    .head .sub-title, .princ > p {
+    .hero-header .description, .features-section > .feature-intro {
         width: 96%;
     }
 
-    .ct-button {
+    .download-buttons {
         flex-direction: column;
         margin-top: 8vw;
         gap: 4vw;
         margin-bottom: 30vw;
     }
 
-    .butt {
+    .download-btn {
         width: 60%;
         height: 10vw;
         font-size: 5vw;
     }
 
-    .princ h2 {
+    .features-section h2 {
         font-size: 8vw;
         margin-bottom: 4vw;
     }
 
-    .princ .competence {
+    .features-section .features-list {
         flex-direction: column;
         margin-top: 15vw;
         padding-right: 0;
     }
 
-    .princ :is(.competence img, .img-devise) {
+    .features-section :is(.features-list img, .devices-image) {
         width: 90%;
         margin: auto;
     }
 
-    .princ .competence .ens-ic {
+    .features-section .features-list .features-details {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -284,70 +286,71 @@ body {
         text-align: center;
     }
 
-    .princ .competence h3 {
+    .features-section .features-list .feature-title {
         color: hsl(210, 10%, 33%);
         font-size: 6vw;
         margin-top: 10vw;
     }
 
-    .princ .competence p {
+    .features-section .features-list p {
         text-align: center;
         width: 85%;
         margin: auto;
     }
 
-    .access {
+    .access-title {
         margin-top: 30vw;
     }
 
-    .img-devise {
+    .devices-image {
         margin-top: 15vw !important;
         margin-bottom: 20vw !important;
     }
 
-    .princ .ens-comp {
+    .features-section .tools-list {
         flex-direction: column;
         align-items: center;
         gap: 15vw;
         margin-top: 20vw;
     }
 
-    .princ .comp {
+    .features-section .tool-card {
         width: 100%;
         padding-bottom: 5vw;
         gap: 10vw;
     }
 
-    .princ .comp img {
+    .features-section .tool-card img {
         width: 20vw;
         height: 18vw;
     }
 
-    .princ .paternaire {
+    .features-section .partners-list {
         flex-direction: column;
         gap: 15vw;
         margin: 30vw auto;
     }
 
-    .princ .paternaire img {
+    .features-section .partners-list img {
         width: 35vw;
     }
 
-    .footer {
+    .main-footer {
         display: flex;
         flex-direction: column;
         gap: 4vw;
         height: auto;
         margin-bottom: 3vw;
+        position: static;
     }
 
-    .footer .logo-footer {
+    .main-footer .footer-logo {
         margin-top: 10vw;
         margin-bottom: 10vw;
         width: 20vw;
     }
 
-    .footer .fac {
+    .main-footer .footer-links {
         display: flex;
         flex-direction: column;
         row-gap: 6vw;
@@ -355,17 +358,17 @@ body {
         margin: 2.2vw auto;
     }
 
-    .footer .fac * {
+    .main-footer .footer-links * {
         font-size: 7vw;
     }
 
-    .footer .social {
+    .main-footer .social {
         gap: 10vw;
         margin-right: 0;
         margin-top: 10vw;
     }
 
-    .footer .social img {
+    .main-footer .social img {
         width: 8vw;
         aspect-ratio: 1/1;
     }
