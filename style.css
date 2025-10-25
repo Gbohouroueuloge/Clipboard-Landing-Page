@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1.2vw;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+.head .bacg {
+    background-image: url(IMG/bg-header-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.head .icon-main {
+    display: block;
+    margin: auto;
+    padding-top: 10vw;
+    padding-bottom: 4vw;
+    width: 15vw;
+    max-width: 200px;
+    height: auto;
+}
+
+.head .title {
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+}
+
+.sub-title, p {
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+}
+
+.head .sub-title, .princ > p {
+    width: 50%;
+    margin: auto;
+    margin-top: 0.7vw;
+}
+
+.ct-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 3vw;
+}
+
+.butt {
+    width: 20%;
+    height: 3vw;
+    border-radius: 20px;
+    font-size: 1.3vw;
+    color: white;
+    transition: all 0.5s;
+}
+
+.butt:hover {
+    background: black;
+    border-color: black;
+}
+
+.butt:focus {
+    background: black;
+    border-color: black;
+}
+
+.butt:active {
+    background: hsl(201, 11%, 66%);
+    border-color: hsl(202, 17%, 91%);
+}
+
+.but-ios {
+    background: hsl(171, 66%, 44%);
+    border-color: hsl(171, 66%, 44%);
+}
+
+.but-mac {
+    background: hsl(233, 100%, 69%);
+    border-color: hsl(233, 100%, 69%);
+}
+
+.princ h2 {
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+}
+
+.princ h2:first-of-type {
+    margin-top: 10vw;
+}
+
+.princ .competence {
+    display: flex;
+    gap: 7vw;
+    margin-top: 5vw;
+    padding-right: 14vw;
+    margin-bottom: 8vw;
+}
+
+.princ :is(.competence img, .img-devise) {
+    display: block;
+    width: 45vw;
+    height: auto;
+}
+
+.princ .competence .ens-ic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.princ .competence h3 {
+    color: hsl(210, 10%, 33%);
+}
+
+.princ .competence p {
+    text-align: start;
+}   
+
+.princ .img-devise {
+    margin: auto;
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+}
+
+.princ .ens-comp {
+    display: flex;
+    margin: 4vw 7vw;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vw;
+}
+
+.princ .comp {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    gap: 1.3vw;
+    align-items: center;
+}
+
+.princ .comp img {
+    display: block;
+    width: 7vw;
+    height: 6vw;
+}
+
+.princ .paternaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    margin: 9vw auto;
+}
+
+.princ .paternaire img {
+    width: 10vw;
+    height: auto;
+}
+
+.footer {
+    margin-top: 15vw;
+    margin-bottom: 0.3vw;
+    background-color: hsl(202, 17%, 91%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 4vw;
+    height: 11vw;
+}
+
+.footer .logo-footer {
+    display: block;
+    margin: auto;
+    width: 5vw;
+    height: auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+.footer .fac {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5vw;
+    row-gap: 1.3vw;
+    width: 90%;
+    margin: 2.2vw 0;
+    margin-left: -8vw;
+    text-align: center;
+}
+
+.footer .fac * {
+    transition: all 0.5s;
+}
+
+.footer .fac *:hover {
+    border: 1px solid hsl(210, 10%, 33%);
+}
+
+.footer .fac *:active {
+    background-color: hsl(210, 10%, 33%);
+    color: hsl(202, 17%, 91%);
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7vw;
+    margin-right: 6vw;
+}
+
+.footer .social * {
+    transition: all 0.6s ease-in-out;
+}
+
+.footer .social *:hover {
+    transform: scale(1.2);
+}
+
+.footer .social img {
+    width: 2vw;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 5vw;
+    }
+
+    .head .bacg {
+        background-image: url(IMG/bg-header-mobile.png);
+    }
+
+    .head .title {
+        margin-top: 4.5vw;
+        margin-bottom: 3vw;
+    }
+
+    .head .sub-title, .princ > p {
+        width: 96%;
+    }
+
+    .ct-button {
+        flex-direction: column;
+        margin-top: 8vw;
+        gap: 4vw;
+        margin-bottom: 30vw;
+    }
+
+    .butt {
+        width: 60%;
+        height: 10vw;
+        font-size: 5vw;
+    }
+
+    .princ h2 {
+        font-size: 8vw;
+        margin-bottom: 4vw;
+    }
+
+    .princ .competence {
+        flex-direction: column;
+        margin-top: 15vw;
+        padding-right: 0;
+    }
+
+    .princ :is(.competence img, .img-devise) {
+        width: 90%;
+        margin: auto;
+    }
+
+    .princ .competence .ens-ic {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        text-align: center;
+    }
+
+    .princ .competence h3 {
+        color: hsl(210, 10%, 33%);
+        font-size: 6vw;
+        margin-top: 10vw;
+    }
+
+    .princ .competence p {
+        text-align: center;
+        width: 85%;
+        margin: auto;
+    }
+
+    .access {
+        margin-top: 30vw;
+    }
+
+    .img-devise {
+        margin-top: 15vw !important;
+        margin-bottom: 20vw !important;
+    }
+
+    .princ .ens-comp {
+        flex-direction: column;
+        align-items: center;
+        gap: 15vw;
+        margin-top: 20vw;
+    }
+
+    .princ .comp {
+        width: 100%;
+        padding-bottom: 5vw;
+        gap: 10vw;
+    }
+
+    .princ .comp img {
+        width: 20vw;
+        height: 18vw;
+    }
+
+    .princ .paternaire {
+        flex-direction: column;
+        gap: 15vw;
+        margin: 30vw auto;
+    }
+
+    .princ .paternaire img {
+        width: 35vw;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+        height: auto;
+        margin-bottom: 3vw;
+    }
+
+    .footer .logo-footer {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        width: 20vw;
+    }
+
+    .footer .fac {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6vw;
+        width: 90%;
+        margin: 2.2vw auto;
+    }
+
+    .footer .fac * {
+        font-size: 7vw;
+    }
+
+    .footer .social {
+        gap: 10vw;
+        margin-right: 0;
+        margin-top: 10vw;
+    }
+
+    .footer .social img {
+        width: 8vw;
+        aspect-ratio: 1/1;
+    }
+
+    .attribution {
+        font-size: 3vw !important;
+    }
+}
